@@ -4,4 +4,3 @@ export EDITOR=vi
 export BLOCKSIZE=K
 export PAGER=less
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
