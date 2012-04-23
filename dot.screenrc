@@ -1,0 +1,11 @@
+vbell off
+escape ^Tt
+startup_message off
+autodetach on
+
+caption always " [%n] %t %=| %Y/%m/%d %c"
+hardstatus alwayslastline "%H | %`%-w%{= dC}%n %t%{-}%+w"
+#hardstatus alwayslastline "screen | %`%-w%{= dC}%n %t%{-}%+w"
+
+defscrollback 32768
+msgwait 1
