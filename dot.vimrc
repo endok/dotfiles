@@ -12,7 +12,7 @@ Bundle 'quickrun.vim'
 Bundle 'neocomplcache'
 Bundle 'The-NERD-Commenter'
 Bundle 'eregex.vim'
-Bundle 'zencoding.vim'
+Bundle 'ZenCoding.vim'
 
 filetype plugin indent on
 
