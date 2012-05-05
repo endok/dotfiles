@@ -101,7 +101,6 @@ alias xterm='xterm -bg black -fg white -fn 7x13'
 alias kterm='kterm -km euc'
 alias vizsh='vi $HOME/.zsh/.zshrc'
 alias sourcezsh='source $HOME/.zsh/.zshrc'
-alias rm='trash'
 alias -g L='| less'
 alias -g G='| grep'
 
