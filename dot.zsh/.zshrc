@@ -1,5 +1,5 @@
 #-- path --#
-export PATH=$HOME/bin:/usr/local/bin:/usr/X11/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin
+export PATH=$HOME/bin:/opt/local/bin:/usr/local/bin:/usr/X11/bin:/usr/bin:/bin:/opt/local/sbin:/usr/local/sbin:/usr/sbin:/sbin
 
 #-- completion --#
 autoload -U compinit
