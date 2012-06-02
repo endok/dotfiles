@@ -111,8 +111,8 @@ inoremap <silent> <ESC> <ESC>:set iminsert=0<CR>
 " ------------------------------
 "  unite.vim
 " ------------------------------
-" let g:unite_enable_start_insert=1 " unite呼び出し時にINSERTモード
-nnoremap <silent> ,uf :<C-u>UniteWithBufferDir -buffer-name=files file file_mru<CR>
+let g:unite_enable_start_insert=1 " unite呼び出し時にINSERTモード
+nnoremap <silent> ,uf :<C-u>UniteWithBufferDir -buffer-name=files file<CR>
 nnoremap <silent> ,ub :<C-u>Unite buffer<CR>
 autocmd FileType unite call s:unite_my_settings()
 function! s:unite_my_settings()
