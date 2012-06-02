@@ -119,6 +119,9 @@ function! s:unite_my_settings()
 	" 単語単位からパス単位で削除するように変更
 	map <buffer> <C-w> <Plug>(unite_delete_backward_path)
 endfunction
+" ESCキーを2回押すと終了する
+au FileType unite nnoremap <silent> <buffer> <ESC><ESC> :q<CR>
+au FileType unite inoremap <silent> <buffer> <ESC><ESC> <ESC>:q<CR>
 
 " ------------------------------
 "  neocomplcache
