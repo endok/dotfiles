@@ -11,8 +11,7 @@ Bundle 'neocomplcache'
 Bundle 'The-NERD-Commenter'
 Bundle 'ZenCoding.vim'
 Bundle 'ctrlp.vim'
-" 自分で追加
-Bundle 'bclose.vim' 
+Bundle 'unite.vim'
 
 filetype plugin indent on
 
@@ -50,8 +49,8 @@ set expandtab
 " ------------------------------
 
 syntax on " シンタックスハイライトON
-" colorscheme macvim
 colorscheme torte
+hi Comment guifg=#7C7C7C guibg=NONE gui=NONE ctermfg=darkgray ctermbg=NONE cterm=NONE
 autocmd BufRead *.twig set filetype=html
 
 " ------------------------------
@@ -122,3 +121,18 @@ set wildignore+=*/tmp/cache/*,*.so,*.swp,*.zip
 "  bclose
 " ------------------------------
 nnoremap <silent> ,bd :Bclose<CR>
+
+" ------------------------------
+"  unite.vim
+" ------------------------------
+"let g:unite_enable_start_insert=1 " unite呼び出し時にINSERTモード
+nnoremap <silent> ,uf :<C-u>UniteWithBufferDir -buffer-name=files file<CR>
+nnoremap <silent> ,ub :<C-u>Unite buffer<CR>
+autocmd FileType unite call s:unite_my_settings()
+function! s:unite_my_settings()
+        " 単語単位からパス単位で削除するように変更
+        map <buffer> <C-w> <Plug>(unite_delete_backward_path)
+endfunction
+" ESCキーを2回押すと終了する
+au FileType unite nnoremap <silent> <buffer> <ESC><ESC> :q<CR>
+au FileType unite inoremap <silent> <buffer> <ESC><ESC> <ESC>:q<CR>
