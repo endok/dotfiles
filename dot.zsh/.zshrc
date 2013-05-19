@@ -39,30 +39,30 @@ esac
 
 #-- screen --#
 # コマンド実行中はコマンド名、それ以外はカレントディレクトリ
-if [ ${TERM} = "screen" -a -z "${REMOTEHOST}${SSH_CONNECTION}" ]; then
-    preexec() {
-        echo -ne "\ek*${1%% *}\e\\"
-    }
-    precmd() {
-        echo -ne "\ek$(basename $(print -P "%~"))\e\\"
-    }
-fi
-if [ ${TERM} = "screen" -a -n "${REMOTEHOST}${SSH_CONNECTION}" ]; then
-    preexec() {
-        echo -ne "\ek$(hostname -s):*${1%% *}\e\\"
-    }
-    precmd() {
-        echo -ne "\ek$(hostname -s):$(basename $(print -P "%~"))\e\\"
-    }
-fi
+#if [ ${TERM} = "screen" -a -z "${REMOTEHOST}${SSH_CONNECTION}" ]; then
+    #preexec() {
+        #echo -ne "\ek*${1%% *}\e\\"
+    #}
+    #precmd() {
+        #echo -ne "\ek$(basename $(print -P "%~"))\e\\"
+    #}
+#fi
+#if [ ${TERM} = "screen" -a -n "${REMOTEHOST}${SSH_CONNECTION}" ]; then
+    #preexec() {
+        #echo -ne "\ek$(hostname -s):*${1%% *}\e\\"
+    #}
+    #precmd() {
+        #echo -ne "\ek$(hostname -s):$(basename $(print -P "%~"))\e\\"
+    #}
+#fi
 
-function ssh_screen(){
-	eval server=\${$#}
-	screen -t $server ssh "$@"
-}
-if [ $TERM = "screen" ]; then
-	alias ssh=ssh_screen
-fi
+#function ssh_screen(){
+	#eval server=\${$#}
+	#screen -t $server ssh "$@"
+#}
+#if [ $TERM = "screen" ]; then
+	#alias ssh=ssh_screen
+#fi
 
 #-- terminal title --#
 # case "${TERM}" in

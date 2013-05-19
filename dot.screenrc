@@ -9,3 +9,5 @@ hardstatus alwayslastline "%H | %`%-w%{= dC}%n %t%{-}%+w"
 
 defscrollback 32768
 msgwait 1
+
+term xterm-256color
