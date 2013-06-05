@@ -12,6 +12,7 @@ Bundle 'The-NERD-Commenter'
 Bundle 'ZenCoding.vim'
 Bundle 'ctrlp.vim'
 Bundle 'The-NERD-tree'
+Bundle 'surround.vim'
 
 filetype plugin indent on
 
