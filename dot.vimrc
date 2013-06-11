@@ -116,7 +116,7 @@ let g:neocomplcache_enable_at_startup = 1
 " ------------------------------
 "  ctrlp
 " ------------------------------
-set wildignore+=*/tmp/cache/*,*.so,*.swp,*.zip
+set wildignore+=*/tmp/cache/*,*/doc/*,*.so,*.swp,*.zip
 
 " ------------------------------
 "  bclose
