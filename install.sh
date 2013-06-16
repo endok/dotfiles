@@ -24,3 +24,6 @@ link_dotfile "$dotfiles/dot.screenrc" "$HOME/.screenrc"
 link_dotfile "$dotfiles/dot.vimrc" "$HOME/.vimrc"
 link_dotfile "$dotfiles/dot.zshenv" "$HOME/.zshenv"
 link_dotfile "$dotfiles/dot.zsh" "$HOME/.zsh"
+
+# create file for chef
+touch $dotfiles/.executed
