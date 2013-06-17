@@ -13,6 +13,7 @@ Bundle 'ZenCoding.vim'
 Bundle 'ctrlp.vim'
 Bundle 'The-NERD-tree'
 Bundle 'surround.vim'
+" Bundle 'pangloss/vim-javascript'
 
 filetype plugin indent on
 
