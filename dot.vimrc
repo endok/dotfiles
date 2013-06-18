@@ -117,7 +117,7 @@ let g:neocomplcache_enable_at_startup = 1
 " ------------------------------
 "  ctrlp
 " ------------------------------
-set wildignore+=*/vendor/bundle/*,*/tmp/cache/*,*/doc/*,*.so,*.swp,*.zip
+let g:ctrlp_custom_ignore = '\v(/vendor/bundler/)|(/doc/)|(/tmp/cache/)|(\.so|\.swp|\.zip)'
 
 " ------------------------------
 "  bclose
