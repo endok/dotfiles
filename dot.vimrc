@@ -14,7 +14,7 @@ Bundle 'ctrlp.vim'
 Bundle 'The-NERD-tree'
 Bundle 'surround.vim'
 Bundle 'rbgrouleff/bclose.vim'
-" Bundle 'pangloss/vim-javascript'
+Bundle 'pangloss/vim-javascript'
 
 filetype plugin indent on
 
@@ -55,6 +55,9 @@ syntax on " シンタックスハイライトON
 colorscheme torte
 hi Comment guifg=#7C7C7C guibg=NONE gui=NONE ctermfg=darkgray ctermbg=NONE cterm=NONE
 autocmd BufRead *.twig set filetype=html
+
+" jsonファイルをjavascriptとして扱う
+autocmd BufNewFile,BufRead *.json set ft=javascript
 
 " ------------------------------
 "  status line
@@ -124,4 +127,5 @@ let g:ctrlp_custom_ignore = '\v(/vendor/bundler/)|(/doc/)|(/tmp/cache/)|(\.so|\.
 "  bclose
 " ------------------------------
 nnoremap <silent> ,bd :Bclose<CR>
+
 
