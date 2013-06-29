@@ -103,6 +103,7 @@ alias vizsh='vi $HOME/.zsh/.zshrc'
 alias sourcezsh='source $HOME/.zsh/.zshrc'
 alias -g L='| less'
 alias -g G='| grep'
+alias be='bundle exec'
 
 if [ `uname` = Linux ]; then; alias ls='ls --color=auto'; fi
 if [ `uname` = Darwin ]; then; alias top='top -o cpu'; fi
