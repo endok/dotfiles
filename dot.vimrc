@@ -56,6 +56,9 @@ colorscheme torte
 hi Comment guifg=#7C7C7C guibg=NONE gui=NONE ctermfg=darkgray ctermbg=NONE cterm=NONE
 autocmd BufRead *.twig set filetype=html
 
+" jsonファイルをjavascriptとして扱う
+autocmd BufNewFile,BufRead *.json set ft=javascript
+
 " ------------------------------
 "  status line
 " ------------------------------
@@ -124,4 +127,5 @@ let g:ctrlp_custom_ignore = '\v(/vendor/bundle/)|(/doc/)|(/spec/reports/)|(/cove
 "  bclose
 " ------------------------------
 nnoremap <silent> ,bd :Bclose<CR>
+
 
