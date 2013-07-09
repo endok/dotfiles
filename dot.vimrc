@@ -15,6 +15,10 @@ Bundle 'The-NERD-tree'
 Bundle 'surround.vim'
 Bundle 'rbgrouleff/bclose.vim'
 Bundle 'pangloss/vim-javascript'
+Bundle 'rails.vim'
+Bundle 'Vim-Rspec'
+Bundle 'endwise.vim'
+Bundle 'bundler'
 
 filetype plugin indent on
 
