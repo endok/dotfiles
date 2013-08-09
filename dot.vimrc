@@ -19,6 +19,7 @@ Bundle 'rails.vim'
 Bundle 'Vim-Rspec'
 Bundle 'endwise.vim'
 Bundle 'bundler'
+Bundle 'vim-coffee-script'
 
 filetype plugin indent on
 
