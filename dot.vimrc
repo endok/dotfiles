@@ -9,10 +9,9 @@ call vundle#rc()
 Bundle 'vundle'
 Bundle 'neocomplcache'
 Bundle 'The-NERD-Commenter'
-Bundle 'ZenCoding.vim'
+Bundle 'mattn/emmet-vim'
 Bundle 'ctrlp.vim'
 Bundle 'The-NERD-tree'
-Bundle 'surround.vim'
 Bundle 'rbgrouleff/bclose.vim'
 Bundle 'pangloss/vim-javascript'
 Bundle 'rails.vim'
@@ -43,7 +42,7 @@ set modelines=0 " modelineを無効に
 " set list " 不可視文字を表示
 " set listchars=trail:_ " 不可視文字の表示形式
 set textwidth=0 " 行の折り返し文字数を設定しない
-set nowrap " 行折り返しをしない
+"set nowrap " 行折り返しをしない
 
 " タブ
 set tabstop=2
@@ -107,8 +106,8 @@ endfunction
 " ------------------------------
 
 " バッファ切り替え
-nnoremap <silent> ; :bn<CR>
-nnoremap <silent> + :bp<CR>
+nnoremap <silent> <Space>; :bn<CR>
+nnoremap <silent> <Space>: :bp<CR>
 
 " Escの2回押しでハイライト消去
 nmap <silent> <ESC><ESC> :nohlsearch<CR><ESC>
@@ -131,6 +130,6 @@ let g:ctrlp_custom_ignore = '\v(/vendor/bundle/)|(/doc/)|(/spec/reports/)|(/cove
 " ------------------------------
 "  bclose
 " ------------------------------
-nnoremap <silent> ,bd :Bclose<CR>
+nnoremap <silent> <Space>bc :Bclose<CR>
 
 
