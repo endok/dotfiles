@@ -19,6 +19,7 @@ Bundle 'Vim-Rspec'
 Bundle 'endwise.vim'
 Bundle 'bundler'
 Bundle 'vim-coffee-script'
+Bundle 'othree/html5.vim'
 
 filetype plugin indent on
 
