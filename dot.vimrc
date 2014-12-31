@@ -58,8 +58,6 @@ set expandtab
 
 syntax on " シンタックスハイライトON
 colorscheme torte
-hi Comment guifg=#7C7C7C guibg=NONE gui=NONE ctermfg=darkgray ctermbg=NONE cterm=NONE
-autocmd BufRead *.twig set filetype=html
 
 " jsonファイルをjavascriptとして扱う
 autocmd BufNewFile,BufRead *.json set ft=javascript
