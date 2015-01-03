@@ -38,6 +38,7 @@ set showmatch " 対応する括弧を強調表示
 set showmode " モードを表示する
 set autoread " 自動で読み込み直し
 set noswapfile " swapファイルを作らない
+set noundofile " undoファイルを作らない
 set hidden " 保存しないで他ファイルを表示可能に
 set vb t_vb= " beep音消す
 set modelines=0 " modelineを無効に
