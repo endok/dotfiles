@@ -38,7 +38,7 @@ set showmatch " 対応する括弧を強調表示
 set showmode " モードを表示する
 set autoread " 自動で読み込み直し
 set noswapfile " swapファイルを作らない
-if v:version < 704
+if v:version >= 704
   set noundofile " undoファイルを作らない(vim7.4以降)
 endif
 set hidden " 保存しないで他ファイルを表示可能に
