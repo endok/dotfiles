@@ -27,10 +27,10 @@ PROMPT="%{${fg[cyan]}%}<%m>%{${reset_color}%} "
 RPROMPT="%{${fg[cyan]}%}[%~]%{${reset_color}%} "
 
 # SSH時に色変更
-#if [ -n "${REMOTEHOST}${SSH_CONNECTION}" ] ; then
-#PROMPT="%{${fg[magenta]}%}<%m>%{${reset_color}%} "
-#RPROMPT="%{${fg[magenta]}%}[%~]%{${reset_color}%} "
-#fi
+if [ -n "${REMOTEHOST}${SSH_CONNECTION}" ] ; then
+PROMPT="%B%{${fg[green]}%}<%m>%{${reset_color}%} "
+RPROMPT="%B%{${fg[green]}%}[%~]%{${reset_color}%} "
+fi
 
 # PROMPT="%{${fg[cyan]}%}%m[%~]%#%{${reset_color}%} "
 # [ -n "${REMOTEHOST}${SSH_CONNECTION}" ] &&
