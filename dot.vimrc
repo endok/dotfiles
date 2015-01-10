@@ -11,16 +11,16 @@ Bundle 'neocomplcache'
 Bundle 'The-NERD-Commenter'
 Bundle 'mattn/emmet-vim'
 Bundle 'ctrlp.vim'
-Bundle 'The-NERD-tree'
 Bundle 'rbgrouleff/bclose.vim'
 Bundle 'pangloss/vim-javascript'
 Bundle 'rails.vim'
-Bundle 'Vim-Rspec'
 Bundle 'endwise.vim'
 Bundle 'bundler'
 Bundle 'vim-coffee-script'
 Bundle 'othree/html5.vim'
 Bundle 'chase/vim-ansible-yaml'
+Bundle 'JulesWang/css.vim'
+Bundle 'cakebaker/scss-syntax.vim'
 
 filetype plugin indent on
 
