@@ -3,25 +3,26 @@
 " ------------------------------
 set nocompatible " vi互換なし
 filetype off
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
-Bundle 'vundle'
-Bundle 'neocomplcache'
-Bundle 'The-NERD-Commenter'
-Bundle 'mattn/emmet-vim'
-Bundle 'ctrlp.vim'
-Bundle 'rbgrouleff/bclose.vim'
-Bundle 'pangloss/vim-javascript'
-Bundle 'rails.vim'
-Bundle 'endwise.vim'
-Bundle 'bundler'
-Bundle 'vim-coffee-script'
-Bundle 'othree/html5.vim'
-Bundle 'chase/vim-ansible-yaml'
-Bundle 'JulesWang/css.vim'
-Bundle 'cakebaker/scss-syntax.vim'
+Plugin 'gmarik/Vundle.vim'
+Plugin 'neocomplcache'
+Plugin 'The-NERD-Commenter'
+Plugin 'mattn/emmet-vim'
+Plugin 'ctrlp.vim'
+Plugin 'rbgrouleff/bclose.vim'
+Plugin 'pangloss/vim-javascript'
+Plugin 'rails.vim'
+Plugin 'endwise.vim'
+Plugin 'bundler'
+Plugin 'vim-coffee-script'
+Plugin 'othree/html5.vim'
+Plugin 'chase/vim-ansible-yaml'
+Plugin 'JulesWang/css.vim'
+Plugin 'cakebaker/scss-syntax.vim'
 
+call vundle#end()
 filetype plugin indent on
 
 " ------------------------------
