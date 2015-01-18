@@ -129,7 +129,7 @@ let g:neocomplcache_enable_at_startup = 1
 " ------------------------------
 "  ctrlp
 " ------------------------------
-let g:ctrlp_custom_ignore = '\v(/vendor/bundle/)|(/doc/)|(/spec/reports/)|(/coverage/)|(/tmp/cache/)|(\.so|\.swp|\.zip)'
+let g:ctrlp_custom_ignore = '\v(/vendor/bundle/)|(/doc/)|(/spec/reports/)|(/coverage/)|(/tmp/cache/)|(\.so|\.swp|\.zip)|(/bower_components)|(/node_modules)'
 
 " ------------------------------
 "  bclose
